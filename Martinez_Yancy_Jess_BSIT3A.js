@@ -9,8 +9,8 @@ console.log('Rank: ' + playerRank);
 
 // Arrays
 let ranks = ["Crown", "Ace", "Ace Master", "Ace Dominator", "Conqueror"];
-let rankDifficulty = ["Easy", "Medium", "Hard", "Very Hard", "Extreme"];
-let teammates = ["Harry", "Casaljay", "Jullever"];
+let rankDifficulty = ["Quite Hard", "Hard", "Very Hard", "Extreme", "Impossible"];
+let teammates = ["Jhon", "Joel", "Ivan"];
 
 // Conditionals
 if (age >= 18) {
