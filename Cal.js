@@ -1,13 +1,21 @@
+// Calculator that accepts user input
+const readline = require("readline");
 
-let num1 = 9;
-let num2 = 10;
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
-let add = num1 + num2;
-let subtract = num1 - num2;
-let multiply = num1 * num2;
-let divide = num1 / num2;
+rl.question("Enter first number: ", (num1) => {
+  rl.question("Enter second number: ", (num2) => {
+    const a = Number(num1);
+    const b = Number(num2);
 
-console.log("Addition: " + add);
-console.log("Subtraction: " + subtract);
-console.log("Multiplication: " + multiply);
-console.log("Division: " + divide);
+    console.log("Addition: " + (a + b));
+    console.log("Subtraction: " + (a - b));
+    console.log("Multiplication: " + (a * b));
+    console.log("Division: " + (a / b));
+
+    rl.close();
+  });
+});
